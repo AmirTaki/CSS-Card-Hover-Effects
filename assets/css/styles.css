@@ -108,6 +108,15 @@ img {
     animation: remove-data 1s forwards;
 }
 
+/* change card_article : remove overflow : hvoer */
+.card__article:hover {
+    animation: remove-flow 2s forwards;
+}
+
+/* change card_article : show overflow : not:hvoer */
+.card__article:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
 
 /* Card animation */
 
@@ -132,3 +141,21 @@ img {
         transform: translateY(.5rem);
     }
 }
+
+/* keyfarms remove overflow in article card */
+@keyframes remove-flow {
+    to {
+        overflow: initial;
+    }
+}
+
+/* keyfarms show overflow in article card */
+@keyframes show-overflow{
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+    50% {
+        overflow: hidden;
+    }
+} 
