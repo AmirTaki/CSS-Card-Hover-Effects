@@ -42,3 +42,18 @@ body {
     color : var(--text-color)
 }
 
+
+/* IMAGE */
+img {
+    display: block;
+    max-width: 100%;
+    height:  auto;
+}
+
+/* CARD */
+.container {
+    display: grid;
+    place-items: center;
+    margin-inline : 1.5rem;
+    padding-block: 5rem ;
+}
