@@ -57,3 +57,18 @@ img {
     margin-inline : 1.5rem;
     padding-block: 5rem ;
 }
+
+.card__container {
+    display: grid;
+    row-gap: 3.5rem;
+}
+
+.card__article {
+    position: relative;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 328px;
+    border-radius: 1.5rem;
+}
