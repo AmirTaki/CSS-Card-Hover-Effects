@@ -9,7 +9,7 @@
     --title-color : hsl(0, 0%, 15%);
     --text-color : hsl(0, 0%, 35%);
     --body-color : hsl(0, 0%, 95%);
-    --container-color : hsl (0, 0%, 100%)
+    --container-color : hsl(0, 0%, 100%);
     
     
     /* font and typography */
@@ -71,4 +71,20 @@ img {
 .card__img {
     width: 328px;
     border-radius: 1.5rem;
+}
+
+/* card -> data */
+.card_data {
+    width: 280px;
+    background-color: var(--container-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
 }
