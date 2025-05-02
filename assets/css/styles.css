@@ -80,7 +80,7 @@ img {
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
-    /* position: absolute; */
+    position: absolute;
     bottom: -9rem;
     left: 0;
     right: 0;
@@ -95,18 +95,40 @@ img {
 }
 
 /* Naming animations in hover */
+
+/* show data :hover */
 .card__article:hover .card__data {
     animation: show-data 1s forwards;
     opacity: 1;
     transition: opacity .3s;
 }
 
+/* remove data  :not hover*/
+.card__article:not(:hover) .card__data{
+    animation: remove-data 1s forwards;
+}
+
+
 /* Card animation */
+
+/* keyfarms show-data hover */
 @keyframes show-data {
     50% {
         transform: translateY(-10rem);
     }
     100% {
         transform: translateY(-7rem);
+    }
+}
+/* keyfarms remove data not hover*/
+@keyframes remove-data{
+    0% {
+        transform: translateY(-7rem);
+    }
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(.5rem);
     }
 }
