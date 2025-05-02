@@ -74,17 +74,39 @@ img {
 }
 
 /* card -> data */
-.card_data {
+.card__data {
     width: 280px;
     background-color: var(--container-color);
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
-    position: absolute;
+    /* position: absolute; */
     bottom: -9rem;
     left: 0;
     right: 0;
     margin-inline: auto;
     opacity: 0;
     transition: opacity 1s 1s;
+}
+
+/* card -> card_description */
+.card_description {
+    background-color: red;
+}
+
+/* Naming animations in hover */
+.card__article:hover .card__data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+/* Card animation */
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(-7rem);
+    }
 }
